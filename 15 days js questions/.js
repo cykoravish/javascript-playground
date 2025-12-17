@@ -1,5 +1,5 @@
-// 1. Find the largest number among these three variables.
 /*
+// 1. Find the largest number among these three variables.
 let num1 = 4;
 let num2 = 8;
 let num3 = 6;
@@ -12,12 +12,11 @@ if (num1 >= num2 && num1 >= num3) {
 } else {
   largest = num3;
 }
-
 console.log(largest);
 */
 
-//2. Find sum of all digits of a number.
 /*
+//2. Find sum of all digits of a number.
 let num = 552;
 let numArr = String(num).split("");
 let sum = 0;
@@ -26,3 +25,26 @@ numArr.forEach((e) => {
 });
 console.log(sum);
 */
+
+/*
+//3. Function to check if two strings are anagrams of each other.
+
+function checkAnagram(str1, str2) {
+  if (str1.length !== str2.length) return false;
+
+  const freq = {};
+  for (let char of str1) {
+    freq[char] = (freq[char] || 0) + 1;
+  }
+
+  for (let char of str2) {
+    if (!freq[char]) return false;
+    freq[char]--;
+  }
+  return true;
+}
+console.log(checkAnagram("listen", "silent"));
+console.log(checkAnagram("aab", "abb"));  
+*/
+
+//4. 
