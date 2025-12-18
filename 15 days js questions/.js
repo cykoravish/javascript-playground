@@ -47,4 +47,9 @@ console.log(checkAnagram("listen", "silent"));
 console.log(checkAnagram("aab", "abb"));  
 */
 
-//4. 
+/*
+//4. Find the even number between 0 and 20
+for (let i = 0; i <= 20; i += 2) {
+  console.log(i);
+}
+*/
