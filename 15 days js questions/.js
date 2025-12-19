@@ -53,3 +53,15 @@ for (let i = 0; i <= 20; i += 2) {
   console.log(i);
 }
 */
+
+/*
+//5. Reverse a string without using reverse();
+function reverseStr(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+console.log(reverseStr("stop"));
+*/
