@@ -65,3 +65,33 @@ function reverseStr(str) {
 }
 console.log(reverseStr("stop"));
 */
+
+/*
+//6. Finding sum of all even numbers from an given array
+const arr = [3, 6, 7, 15, 20, 35, 22];
+let sum = 0;
+arr.forEach((elem) => {
+  if (elem % 2 === 0) {
+    sum += elem;
+  }
+});
+console.log(sum);
+*/
+
+/*
+//7. Given an array of numbers, find the largest even number.
+function findLargestEvenNo(arr) {
+  let largestEven = null;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      if (largestEven === null || arr[i] > largestEven) {
+        largestEven = arr[i];
+      }
+    }
+  }
+
+  return largestEven;
+}
+console.log(findLargestEvenNo([0, 4, 2])); 
+*/
