@@ -95,3 +95,18 @@ function findLargestEvenNo(arr) {
 }
 console.log(findLargestEvenNo([0, 4, 2])); 
 */
+
+/*
+//8. Find the count of vowels in a string
+const str = "javascript";
+let count = 0;
+const vowels = "aeiou";
+
+for (let char of str.toLowerCase()) {
+  if (vowels.includes(char)) {
+    count++;
+  }
+}
+
+console.log(count);
+*/
