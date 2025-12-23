@@ -110,3 +110,17 @@ for (let char of str.toLowerCase()) {
 
 console.log(count);
 */
+
+/*
+//9. Remove duplicate values from an array
+const arr = [1, 2, 3, 2, 4, 1, 5];
+let newArr = [];
+arr.forEach((e) => {
+  if (newArr.includes(e)) {
+    return;
+  }else{
+    newArr.push(e)
+  }
+});
+console.log(newArr);
+*/
