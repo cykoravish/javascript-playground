@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+body,
+div {
+  display: grid;
+}
+
+body {
+  place-content: center;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100vh;
+  perspective: 35em;
+  background: #000014;
+}
+
+div {
+  transform-style: preserve-3d;
+}
+
+.a3d {
+  --m: calc(.5*(var(--n-stars) - 1));
+  --t: calc(0.33333*var(--n-stars)*0.1s);
+  animation: roty 12s linear var(--t) infinite reverse;
+}
+
+@keyframes roty {
+  to {
+    rotate: y 1turn;
+  }
+}
+
+.🌟 {
+  --q: Min(1, var(--j));
+  --p: calc(1 - var(--q));
+  --s: calc((1.25*var(--p) + var(--q)*var(--sf))*2em);
+  --ay0: calc(var(--i)/var(--n-arms)*1turn);
+  --ay1: calc(var(--ay0) - var(--n-loops)*1turn);
+  --ay: calc((var(--j)/var(--n-stars)*var(--n-loops) + var(--i)/var(--n-arms))*1turn);
+  --tx: calc(var(--q)*var(--rox)*2em);
+  --ty0: calc(var(--m)/var(--n-stars)*20em);
+  --ty1: calc(-1*var(--ty0) - 0.75*2em);
+  --ty: calc((var(--j) - var(--m))/var(--n-stars)*20em + (var(--q)*var(--roy) - var(--p)*0.75)*2em);
+  --tz: calc(var(--j)/var(--n-stars)*10em + var(--q)*var(--roz)*2em);
+  grid-area: 1/ 1;
+  width: var(--s);
+  height: var(--s);
+  --pos: rotatey(var(--ay)) translate3d(var(--tx), var(--ty), var(--tz)) rotatey(calc(-1*var(--ay)));
+  transform: var(--pos);
+  --dt: calc(0.33333*(var(--n-stars) - var(--j))*0.1s);
+  animation: grow calc(var(--q)*0.1s) ease-out var(--dt) backwards, move calc(var(--p)*var(--t)) linear;
+}
+
+.🌟::after {
+  opacity: calc(var(--p) + var(--q)*var(--j)/var(--n-stars) + .25);
+  background: radial-gradient(#fffacd 10%, rgba(255, 250, 205, 0.2));
+  --points: 50% 0%, 53.53553% 41.46447%, 85.35534% 14.64466%, 58.53553% 46.46447%, 100% 50%, 58.53553% 53.53553%, 85.35534% 85.35534%, 53.53553% 58.53553%, 50% 100%, 46.46447% 58.53553%, 14.64466% 85.35534%, 41.46447% 53.53553%, 0% 50%, 41.46447% 46.46447%, 14.64466% 14.64466%, 46.46447% 41.46447%;
+  -webkit-clip-path: polygon(var(--points));
+  clip-path: polygon(var(--points));
+  animation: roty 12s linear var(--t) infinite, puls calc(var(--p)*.1s) ease-in-out infinite alternate, hue 4s linear var(--dt) infinite;
+  content: "";
+}
+
+@keyframes grow {
+  0% {
+    transform: var(--pos) scale(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotatey(var(--ay0)) translate3d(0, var(--ty0), 10em) rotatey(calc(-1*var(--ay0)));
+  }
+
+  100% {
+    transform: rotatey(var(--ay1)) translate3d(0, var(--ty1), 0) rotatey(calc(-1*var(--ay1)));
+  }
+}
+
+@keyframes puls {
+  to {
+    scale: .2;
+    opacity: 0.2;
+  }
+}
+
+@keyframes hue {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.christmas-title {
+  position: absolute;
+  top: 6vh; /* safely above the tree */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 0.15em;
+
+  font-family: "Cinzel", serif;
+
+  /* SMALL, elegant size */
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: #fffacd;
+  text-shadow:
+    0 0 8px rgba(255, 250, 205, 0.5),
+    0 0 18px rgba(255, 215, 120, 0.25);
+
+  pointer-events: none;
+  z-index: 10;
+}
+
+
+
+/* Individual letters */
+.christmas-title span {
+  opacity: 0;
+  transform: translateY(clamp(10px, 2vw, 22px)) scale(0.96);
+  animation:
+    textReveal 0.9s ease forwards,
+    glowPulse 3.5s ease-in-out infinite;
+}
+
+
+/* Staggered reveal */
+.christmas-title span:nth-child(n) {
+  animation-delay: calc(var(--i, 0) * 0.08s);
+}
+
+.christmas-title span {
+  --i: 0;
+}
+
+.christmas-title span:nth-child(1) {
+  --i: 1
+}
+
+.christmas-title span:nth-child(2) {
+  --i: 2
+}
+
+.christmas-title span:nth-child(3) {
+  --i: 3
+}
+
+.christmas-title span:nth-child(4) {
+  --i: 4
+}
+
+.christmas-title span:nth-child(5) {
+  --i: 5
+}
+
+.christmas-title span:nth-child(7) {
+  --i: 6
+}
+
+.christmas-title span:nth-child(8) {
+  --i: 7
+}
+
+.christmas-title span:nth-child(9) {
+  --i: 8
+}
+
+.christmas-title span:nth-child(10) {
+  --i: 9
+}
+
+.christmas-title span:nth-child(11) {
+  --i: 10
+}
+
+.christmas-title span:nth-child(12) {
+  --i: 11
+}
+
+.christmas-title span:nth-child(13) {
+  --i: 12
+}
+
+.christmas-title span:nth-child(14) {
+  --i: 13
+}
+
+.christmas-title span:nth-child(15) {
+  --i: 14
+}
+
+.christmas-title span:nth-child(17) {
+  --i: 15
+}
+
+.christmas-title span:nth-child(18) {
+  --i: 16
+}
+
+.christmas-title span:nth-child(19) {
+  --i: 17
+}
+
+.christmas-title span:nth-child(20) {
+  --i: 18
+}
+
+/* Reveal animation */
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Soft shimmer pulse */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px rgba(255, 250, 205, 0.6),
+      0 0 28px rgba(255, 215, 100, 0.25);
+  }
+
+  50% {
+    text-shadow:
+      0 0 18px rgba(255, 250, 205, 0.9),
+      0 0 45px rgba(255, 215, 120, 0.5);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .christmas-title {
+    top: 4vh;
+    letter-spacing: 0.18em;
+  }
+}
