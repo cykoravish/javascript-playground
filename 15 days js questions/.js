@@ -131,3 +131,12 @@ let arr = [1, 2, [3, 4, [5, 6]], [7, 8], [9], 10];
 let newArr = arr.flat(Infinity);
 console.log(newArr);
 */
+
+/*
+//11. Find the Largest Number in an Array
+function findLargestNum(numArr) {
+  return Math.max(...numArr);
+}
+console.log(findLargestNum([2, 6, 20, 64, 32]));
+*/
+
