@@ -140,3 +140,14 @@ function findLargestNum(numArr) {
 console.log(findLargestNum([2, 6, 20, 64, 32]));
 */
 
+/*
+// 12. Return the longest word from a sentence
+let sentence = "i love coding";
+let longestWord = "";
+sentence.split(" ").forEach((e)=>{
+  if(longestWord.length < e.length){
+    longestWord = e;
+  }
+}) 
+console.log(longestWord);
+*/
