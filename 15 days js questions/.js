@@ -151,3 +151,15 @@ sentence.split(" ").forEach((e)=>{
 }) 
 console.log(longestWord);
 */
+
+/*
+//13. Create a class User with a constructor that takes name and stores it
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+const user1 = new User("Ravish");
+console.log(user1.name);
+*/
