@@ -159,7 +159,22 @@ class User {
     this.name = name;
   }
 }
-
 const user1 = new User("Ravish");
 console.log(user1.name);
 */
+
+/*
+//14. Create a JavaScript class Car that takes brand in the constructor and has a method getBrand() which returns the brand name.
+
+class Car {
+  constructor(brand) {
+    this.brand = brand;
+  }
+  getBrand() {
+    return this.brand;
+  }
+}
+let lambo = new Car("lamborghini");
+console.log(lambo.getBrand());
+*/
+
