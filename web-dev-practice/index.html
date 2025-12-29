@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN (for now) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- App entry -->
+    <script type="module" src="./js/app.js" defer></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- App root (like React root) -->
+    <div id="app"></div>
+    <script>
+        const redirect = sessionStorage.redirect;
+        if (redirect) {
+            sessionStorage.removeItem("redirect");
+            history.replaceState(null, "", redirect);
+        }
+    </script>
+
+</body>
+
+</html>
