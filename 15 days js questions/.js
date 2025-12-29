@@ -178,3 +178,11 @@ let lambo = new Car("lamborghini");
 console.log(lambo.getBrand());
 */
 
+/*
+//15. Write a function isPalindrome(str) that returns true if the string is the same when reversed, otherwise false.
+
+function isPalindrome(str) {
+  return str === str.split("").reverse().join("");
+}
+console.log(isPalindrome("lol"));
+*/
