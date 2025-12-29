@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus — The Future of Work</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M16 10L22 13.5V20.5L16 24L10 20.5V13.5L16 10Z" fill="currentColor"/>
+        </svg>
+        <span>Nexus</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#showcase" class="nav-link">Showcase</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#cta" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost">Sign In</a>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="#" class="btn-ghost">Sign In</a>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Now in Public Beta</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Build products</span>
+        <span class="title-line gradient-text">at lightspeed</span>
+      </h1>
+      <p class="hero-subtitle">
+        The next-generation platform for teams who ship fast. 
+        Collaborate, iterate, and deploy — all in one place.
+      </p>
+      <div class="hero-ctas">
+        <a href="#" class="btn-primary btn-large magnetic-btn">
+          <span>Start Building Free</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#" class="btn-ghost btn-large">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+          </svg>
+          <span>Watch Demo</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" data-count="50">0</span><span class="stat-suffix">K+</span>
+          <span class="stat-label">Active Users</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value" data-count="99.9">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value" data-count="2">0</span><span class="stat-suffix">x</span>
+          <span class="stat-label">Faster Deploys</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <section class="marquee-section">
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-content">
+          <span class="marquee-item">Next.js</span>
+          <span class="marquee-item">TypeScript</span>
+          <span class="marquee-item">React</span>
+          <span class="marquee-item">Vercel</span>
+          <span class="marquee-item">Prisma</span>
+          <span class="marquee-item">PostgreSQL</span>
+          <span class="marquee-item">GraphQL</span>
+          <span class="marquee-item">Redis</span>
+          <span class="marquee-item">Docker</span>
+          <span class="marquee-item">Kubernetes</span>
+          <span class="marquee-item">AWS</span>
+          <span class="marquee-item">Stripe</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">Next.js</span>
+          <span class="marquee-item">TypeScript</span>
+          <span class="marquee-item">React</span>
+          <span class="marquee-item">Vercel</span>
+          <span class="marquee-item">Prisma</span>
+          <span class="marquee-item">PostgreSQL</span>
+          <span class="marquee-item">GraphQL</span>
+          <span class="marquee-item">Redis</span>
+          <span class="marquee-item">Docker</span>
+          <span class="marquee-item">Kubernetes</span>
+          <span class="marquee-item">AWS</span>
+          <span class="marquee-item">Stripe</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to ship faster</h2>
+        <p class="section-subtitle">Powerful tools designed for modern development teams</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Lightning Fast</h3>
+          <p class="feature-desc">Deploy in seconds with our optimized infrastructure. No cold starts, no waiting.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Real-time Sync</h3>
+          <p class="feature-desc">Collaborate with your team in real-time. See changes as they happen.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Scalable Stack</h3>
+          <p class="feature-desc">From prototype to production. Scale effortlessly as you grow.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Enterprise Security</h3>
+          <p class="feature-desc">SOC 2 compliant with end-to-end encryption. Your data stays yours.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M23 21V19C23 17.1362 21.7252 15.5701 20 15.126" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 3.12602C17.7252 3.57006 19 5.13623 19 7C19 8.86377 17.7252 10.4299 16 10.874" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Team Workflows</h3>
+          <p class="feature-desc">Built for collaboration. Reviews, approvals, and handoffs made simple.</p>
+          <div class="feature-glow"></div>
+        </div>
+        <div class="feature-card" data-tilt>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.7 6.3C14.3 5.9 13.7 5.9 13.3 6.3L6.3 13.3C5.9 13.7 5.9 14.3 6.3 14.7L9.3 17.7C9.7 18.1 10.3 18.1 10.7 17.7L17.7 10.7C18.1 10.3 18.1 9.7 17.7 9.3L14.7 6.3Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 10L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M21 21L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Integrations</h3>
+          <p class="feature-desc">Connect with 100+ tools you already use. GitHub, Slack, Figma, and more.</p>
+          <div class="feature-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="showcase" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Built for developers, loved by teams</h2>
+      </div>
+      <div class="showcase-content">
+        <div class="showcase-visual">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="code-title">deploy.js</span>
+            </div>
+            <pre class="code-body"><code><span class="code-keyword">import</span> { nexus } <span class="code-keyword">from</span> <span class="code-string">'@nexus/sdk'</span>;
+
+<span class="code-keyword">const</span> app = nexus.<span class="code-function">init</span>({
+  <span class="code-prop">name</span>: <span class="code-string">'my-app'</span>,
+  <span class="code-prop">region</span>: <span class="code-string">'auto'</span>
+});
+
+<span class="code-keyword">await</span> app.<span class="code-function">deploy</span>();
+<span class="code-comment">// ✓ Deployed in 2.3s</span></code></pre>
+          </div>
+          <div class="showcase-stats">
+            <div class="showcase-stat" data-scroll-animate>
+              <div class="showcase-stat-bar">
+                <div class="showcase-stat-fill" data-width="95"></div>
+              </div>
+              <span class="showcase-stat-label">Build Speed</span>
+              <span class="showcase-stat-value">95%</span>
+            </div>
+            <div class="showcase-stat" data-scroll-animate>
+              <div class="showcase-stat-bar">
+                <div class="showcase-stat-fill" data-width="88"></div>
+              </div>
+              <span class="showcase-stat-label">Team Efficiency</span>
+              <span class="showcase-stat-value">88%</span>
+            </div>
+            <div class="showcase-stat" data-scroll-animate>
+              <div class="showcase-stat-bar">
+                <div class="showcase-stat-fill" data-width="99"></div>
+              </div>
+              <span class="showcase-stat-label">Uptime</span>
+              <span class="showcase-stat-value">99.9%</span>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-text">
+          <h3 class="showcase-title">Ship with confidence</h3>
+          <p class="showcase-desc">
+            Our platform handles the complexity so you can focus on what matters — building great products. 
+            From CI/CD to monitoring, everything just works.
+          </p>
+          <ul class="showcase-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Automatic previews for every PR</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Instant rollbacks with one click</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Real-time logs and analytics</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Zero-config edge functions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, scale as you grow</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-desc">Perfect for side projects</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">$0</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 3 projects</li>
+            <li>1GB storage</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a href="#" class="btn-ghost btn-full">Get Started</a>
+        </div>
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pro</h3>
+            <p class="pricing-desc">For growing teams</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">$29</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited projects</li>
+            <li>100GB storage</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Team collaboration</li>
+            <li>Custom domains</li>
+          </ul>
+          <a href="#" class="btn-primary btn-full">Start Free Trial</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <p class="pricing-desc">For large organizations</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">Custom</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Pro</li>
+            <li>Unlimited storage</li>
+            <li>24/7 dedicated support</li>
+            <li>SLA guarantees</li>
+            <li>SSO & SAML</li>
+            <li>Audit logs</li>
+          </ul>
+          <a href="#" class="btn-ghost btn-full">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="cta-bg">
+      <div class="cta-glow"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to build the future?</h2>
+        <p class="cta-subtitle">Join thousands of developers shipping faster with Nexus.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn-primary btn-large magnetic-btn">
+            <span>Start Building Free</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="btn-ghost btn-large">Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M16 10L22 13.5V20.5L16 24L10 20.5V13.5L16 10Z" fill="currentColor"/>
+            </svg>
+            <span>Nexus</span>
+          </a>
+          <p class="footer-tagline">Build products at lightspeed.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Roadmap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nexus. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Discord">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
